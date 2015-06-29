@@ -1,1 +1,19 @@
-{{outlet}}
+<!-- <h1>Login</h1>
+<form {{action "login" on='submit'}}>
+Name :{{input type=text value=name}}
+<br>
+Company :{{input type=text value=company}}
+<br>
+password :{{input type=text value=password}}
+<button>Submit</button>
+</form>
+
+{{outlet}} -->
+
+<form {{action 'authenticate' on='submit'}}>
+  <label for="identification">Login</label>
+  {{input id='identification' placeholder='Enter Login' value=identification}}
+  <label for="password">Password</label>
+  {{input id='password' placeholder='Enter Password' type='password' value=password}}
+  <button type="submit">Login</button>
+</form>

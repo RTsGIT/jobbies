@@ -1,11 +1,16 @@
 <h2 id="title">LOGO Jobbie</h2>
-
-<div align="left">
+{{#if session.isAuthenticated}}
+  <a {{ action 'invalidateSession' }}>Logout</a>
+  <div align="left">
 	<ul>
 		<li>{{link-to 'home' 'jobbies' class='class'}}</li>
 		<li>{{link-to 'profile' 'jobbies.show' 1 class='class'}}</li>
 	</ul>
 </div>
+{{else}}
+  {{#link-to 'login'}}Login{{/link-to}}
+{{/if}}
+
 
 
 {{outlet}}
