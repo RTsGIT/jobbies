@@ -1,0 +1,7 @@
+<h1>Jobbies</h1>
+{{input type="text" id="search-todo" placeholder="Search Todo List..." value=searchTerm}}
+{{#each jobby in model}}
+
+		{{jobby-item jobby=jobby}}
+{{/each}}
+{{outlet}}
