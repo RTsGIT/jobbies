@@ -7,18 +7,28 @@ export default DS.Model.extend({
     FIXTURES: [
         {
             id: 1,
-           	name: "Complete Ember.js Tutorial",
+           	name: "Raja",
             company: "google"
         },
         {
             id: 2,
-           	name: "Checkout some more ember stuff",
+           	name: "Ravi",
             company: "godaddy"
         },
         {
             id: 3,
-           	name: "Solve world hunger (with Ember)",
-            company: ""
+           	name: "Teja",
+            company: "microsoft"
+        },
+        {
+            id: 4,
+           	name: "Panidepu",
+            company: "Parrot"
+        },
+        {
+            id: 5,
+           	name: "Ravi Teja",
+            company: "Tesla"
         }
     ]
 });

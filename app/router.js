@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('jobbies', function() {
     this.route('show',{path :':jobby_id'});
   });
+  this.route('login');
 });
 
 
